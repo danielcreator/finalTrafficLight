@@ -23,19 +23,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
-        startButton.layer.cornerRadius = 10
-        redCircle.layer.cornerRadius = redCircle.frame.width / 2
-        yellowCircle.layer.cornerRadius = yellowCircle.frame.width / 2
-        greenCircle.layer.cornerRadius = greenCircle.frame.width / 2
         
+        startButton.layer.cornerRadius = 10
         yellowCircle.alpha = lightIsOff
         redCircle.alpha = lightIsOff
         greenCircle.alpha = lightIsOff
     }
-
+    override func viewWillLayoutSubviews() {
+        redCircle.layer.cornerRadius = redCircle.frame.width / 2
+        yellowCircle.layer.cornerRadius = yellowCircle.frame.width / 2
+        greenCircle.layer.cornerRadius = greenCircle.frame.width / 2
+        
+        print (greenCircle.frame.width)
+    }
 
     @IBAction func pressButton() {
+        
         if startButton.currentTitle == "Start" {
             startButton.setTitle("Press", for: .normal )
         }

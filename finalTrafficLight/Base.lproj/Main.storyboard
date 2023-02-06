@@ -64,7 +64,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="greenCircle" destination="kat-qg-Rnb" id="pFg-OL-R5w"/>
+                        <outlet property="greenCircle" destination="M1h-b9-a1k" id="ZZf-lI-5kY"/>
                         <outlet property="redCircle" destination="Vjz-Lb-SMG" id="tuK-yE-KcB"/>
                         <outlet property="startButton" destination="kat-qg-Rnb" id="VCI-dB-8Xn"/>
                         <outlet property="yellowCircle" destination="Qcz-mS-hD6" id="fcF-kT-wDU"/>
